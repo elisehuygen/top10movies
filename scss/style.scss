@@ -1,0 +1,190 @@
+.parallax {
+    height: 500px; 
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+
+  .pargroup {
+    position: relative;
+    height: 800px; 
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .parlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parlayer_base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+
+.parlayer_background {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+  }
+
+  body, html {
+    overflow: hidden;
+  }
+
+  * {
+    margin:0;
+    padding:0;
+  }
+
+  .parallax {
+    font-size: 200%;
+  }
+
+h1 {
+    font-size: 2em;
+    font-family: 'Special Elite', cursive;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 2%; 
+  }
+h2 {
+    width: 300px;
+    font-size: 1em;
+    color: #CD5C5C;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    font-family: 'Special Elite', cursive;
+    border: #CD5C5C solid 2px;
+    z-index:7;
+    text-shadow: 2px 2px 4px black;
+  }
+
+p {
+    font-size: 0.5em;
+    width: 300px;
+    color:white;
+  -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    position: absolute;
+    top: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 30px;
+    z-index:6;
+    opacity: 0.7;
+}
+
+  #group1 {
+    z-index: 5;
+  }
+  #group1 .parlayer_base {
+    background-image: url("https://images.pexels.com/photos/27008/pexels-photo-27008.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
+    background-size: 100%;
+  }
+
+  #group2 {
+    z-index: 3; 
+  }
+  #group2 .parlayer_background {
+        color: white;
+    background-image: url("https://i.ytimg.com/vi/ViuDsy7yb8M/maxresdefault.jpg");
+        background-size: 100%;
+  }
+  #group3 {
+    z-index: 4; 
+  }
+  #group3 .parlayer_base {
+    background-image: url("https://i.ytimg.com/vi/Pv0gAzorfKQ/maxresdefault.jpg");
+    background-size: 100%;
+  }
+
+  #group4 {
+    z-index: 3; 
+  }
+ #group4 .parlayer_background {
+    background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/12/24/10/star-wars-rogue-one-cast.jpg");
+    background-size: 100%;
+  }
+
+  #group5 {
+    z-index: 4; 
+  }
+  #group5 .parlayer_base {
+    background-image: url("http://trailers.apple.com/trailers/paramount/arrival/images/thumbnail_24771.jpg");
+      background-size: 100%;
+  }
+
+  #group6 {
+    z-index: 3; 
+  }
+  #group6 .parlayer_background{
+    background-image: url("http://media.vanityfair.com/photos/57adfeb6f114d3ca724a0ddd/16:9/w_1200,h_630,c_limit/brad-pitt-allied-trailer.jpg");
+    background-size: 100%;
+  }
+
+  #group7 {
+    z-index: 4; 
+  }
+  #group7 .parlayer_base {
+    background-image: url("http://www.misstral.com/wp-content/uploads/2016/08/suicide-squad-cast.jpg");
+    background-size: 100%;
+  }
+#group8 {
+    z-index: 3; 
+  }
+ #group8 .parlayer_background {
+    background-image: url("https://timedotcom.files.wordpress.com/2016/09/nocturnal-animals.jpg?quality=85&w=1100");
+    background-size: 100%;
+  }
+#group9 {
+    z-index: 4; 
+  }
+ #group9 .parlayer_base {
+    background-image: url("http://geeknewsnetwork.net/wp-content/uploads/2016/11/doctor_strange_2016-HD.jpg");
+    background-size: 100%;
+  }
+#group10 {
+    z-index: 3; 
+  }
+ #group10 .parlayer_background {
+    background-image: url("http://cdn4.thr.com/sites/default/files/2016/07/hacksawridge_andrew_garfield_publicity_still_h_2016_0.jpg");
+    background-size: 100%;
+  }
+#group11 {
+    z-index: 4; 
+  }
+ #group11 .parlayer_base {
+    background-image: url("http://www.indiewire.com/wp-content/uploads/2016/03/silence-1.jpg?w=680");
+    background-size: 100%;
+  }
+#group2 .parlayer_base h2, #group4 .parlayer_base h2, #group6 .parlayer_base h2, #group8 .parlayer_base h2, #group10 .parlayer_base h2 {
+  left: 70%;
+}
+#group2 .parlayer_base p, #group4 .parlayer_base p, #group6 .parlayer_base p, #group8 .parlayer_base p, #group10 .parlayer_base p {
+  left: 80%;
+}
+
+#group3 .parlayer_base h2, #group5 .parlayer_base h2, #group7 .parlayer_base h2, #group9 .parlayer_base h2, #group11 .parlayer_base h2 {
+  left: 20%;
+}
+#group3 .parlayer_base p, #group5 .parlayer_base p, #group7 .parlayer_base p, #group9 .parlayer_base p, #group11 .parlayer_base p {
+  left: 30%;
+}
